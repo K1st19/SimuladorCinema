@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SimuladorPedido</title>
+    <link rel="stylesheet" href="style.css"/>
+ 
+</head>
+<body>
+    <!-- Container principal da página-->
+    <div class="container">
+        <!-- Título principal-->
+        <h1> Over Power Omega Mega Iper Super Cinema do TDS Senac</h1>
+        <!-- Subtítulo-->
+        <p class="subtitulo">
+            O melhor cinema do mundo
+        </p>
+        <!-- Área que contém todos os produtos -->
+        <div class="cards">
+            <!-- CARD = UM PRODUTO-->
+            <!-- Usamos label para que clicar no card marque checkbox-->
+            <label class="card">
+                <!-- Checkbox que identifica se o item está selecionado -->
+                <input type="checkbox" id="ted">
+                <!-- Imagem do produto -->
+                <img src="ted.jpg" alt="ted"> 
+                <!-- Nome do produto-->
+                <h2> Ted </h2>
+                <!-- Descrição-->
+                <p> Ted é uma comédia sobre um homem adulto cujo ursinho de infância ganha vida e se torna seu melhor amigo — só que com hábitos nada infantis, causando confusões e conflitos na vida dele.
+                </p>
+                <!-- Preço-->
+                <span> R$ 13,00</span>
+            </label>
+
+            <!-- BATATA-->
+            <label class="card">
+                <!-- Checkbox que identifica se o item está selecionado -->
+                <input type="checkbox" id="Marly e Eu">
+                <!-- Imagem do produto -->
+                <img src="Marley e Eu.jpg" alt="Marley e Eu"> 
+                <!-- Nome do produto-->
+                <h2> Marley e Eu</h2>
+                <!-- Descrição-->
+                <p> Marley & Me é um drama/comédia que conta a história de um casal e seu cachorro Marley, um labrador bagunceiro que acompanha a família ao longo dos anos, mostrando momentos divertidos e emocionantes sobre amor, crescimento e despedidas.</p>
+                <!-- Preço-->
+                <span> R$ 13,00</span>
+            </label>
+
+            <!-- NUGGETS-->
+            <label class="card">
+                <!-- Checkbox que identifica se o item está selecionado -->
+                <input type="checkbox" id="NORBIT">
+                <!-- Imagem do produto -->
+                <img src="NORBIT.webp" alt="NORBIT"> 
+                <!-- Nome do produto-->
+                <h2> NORBIT</h2>
+                <!-- Descrição-->
+                <p> Norbit é uma comédia sobre Norbit, um homem tímido que cresceu em um orfanato e acaba preso em um casamento com uma mulher autoritária. Sua vida muda quando reencontra seu amor de infância, fazendo com que ele tente tomar coragem para mudar seu destino.</p>
+                <!-- Preço-->
+                <span> R$ 15,00</span>
+            </label>
+
+            <!-- COQUINHA-->
+            <label class="card">
+                <!-- Checkbox que identifica se o item está selecionado -->
+                <input type="checkbox" id="Bee Movie">
+                <!-- Imagem do produto -->
+                <img src="Bee Movie.jpg" alt="Bee Movie"> 
+                <!-- Nome do produto-->
+                <h2> Bee Movie</h2>
+                <!-- Descrição-->
+                <p> É uma animação que acompanha Barry, uma abelha que decide explorar o mundo humano e acaba descobrindo que as pessoas usam o mel das abelhas, o que o leva a enfrentar os humanos para mudar essa situação.</p>
+                <!-- Preço-->
+                <span> R$ 15,00</span>
+            </label>
+
+            <!-- SORVETE-->
+            <label class="card">
+                <!-- Checkbox que identifica se o item está selecionado -->
+                <input type="checkbox" id="O Cabeça da Familia">
+                <!-- Imagem do produto -->
+                <img src="O cabeça da familia.webp" alt="O Cabeça da Familia"> 
+                <!-- Nome do produto-->
+                <h2> O Cabeça da Familia</h2>
+                <!-- Descrição-->
+                <p> Head of the Family é um terror/comédia sobre uma família de mutantes comandada por uma cabeça gigante que controla os outros membros e envolve uma trama de chantagem e crimes.</p>
+                <!-- Preço-->
+                <span> R$ 15,00</span>
+            </label>
+            <!-- PIZZA -->
+            <label class="card">
+                <!-- Checkbox que identifica se o item está selecionado -->
+                <input type="checkbox" id="Vovózona">
+                <!-- Imagem do produto -->
+                <img src="vovózona.jpg" alt="Vovózona"> 
+                <!-- Nome do produto-->
+                <h2> Vovózona</h2>
+                <!-- Descrição-->
+                <p> Vovózona é uma comédia em que um agente do FBI se disfarça de uma senhora idosa para se infiltrar e investigar um caso. Durante a missão, ele precisa manter o disfarce enquanto se envolve em situações engraçadas e complicadas, especialmente quando começa a conviver de perto com as pessoas do local.</p>
+                <!-- Preço-->
+                <span> R$ 15,00</span>
+            </label>          
+
+        
+        </div>
+        <!-- Botão que chama a função calcular() para somar o pedido-->
+        <button onclick="calcular()"> Calcular Pedido</button>
+        <!-- Área de resultado do pedido-->
+        <div id="resultado" class="resultado"></div>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
